@@ -2,7 +2,16 @@
 
 **From Structured Facts to Logical Conflicts: A Benchmark and Framework for Visual-Text Conflict**
 
-[中文说明](README_CN.md) · [Method](docs/method.md) · [Evaluation](docs/evaluation.md) · [Configuration](docs/configuration.md)
+[![Hugging Face — LogicCon Dataset](https://img.shields.io/badge/Hugging%20Face-LogicCon%20Dataset-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/datasets/benchmarkanon/logic_conflict)
+
+> [!IMPORTANT]
+> **The LogicCon dataset is available on Hugging Face.**
+>
+> **Dataset: [huggingface.co/datasets/benchmarkanon/logic_conflict](https://huggingface.co/datasets/benchmarkanon/logic_conflict)**
+>
+> [Browse the dataset](https://huggingface.co/datasets/benchmarkanon/logic_conflict) · [Files and downloads](https://huggingface.co/datasets/benchmarkanon/logic_conflict/tree/main)
+
+[Dataset](https://huggingface.co/datasets/benchmarkanon/logic_conflict) · [中文说明](README_CN.md) · [Method](docs/method.md) · [Evaluation](docs/evaluation.md) · [Configuration](docs/configuration.md)
 
 LogicCon checks visual–textual conflicts through target-aware claim parsing, visual verification, iterative evidence supplementation, conflict aggregation, and a final structured answer. The framework operates at inference time with one backbone vision-language model. Its inputs are an image and a statement.
 

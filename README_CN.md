@@ -2,7 +2,16 @@
 
 论文 **From Structured Facts to Logical Conflicts: A Benchmark and Framework for Visual-Text Conflict** 的推理方法代码。
 
-[English](README.md) · [方法细节](docs/method.md) · [评测说明](docs/evaluation.md) · [配置说明](docs/configuration.md)
+[![Hugging Face — LogicCon Dataset](https://img.shields.io/badge/Hugging%20Face-LogicCon%20Dataset-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/datasets/benchmarkanon/logic_conflict)
+
+> [!IMPORTANT]
+> **LogicCon 数据集已在 Hugging Face 公开，点击下方链接即可浏览和下载。**
+>
+> **数据集网址：[huggingface.co/datasets/benchmarkanon/logic_conflict](https://huggingface.co/datasets/benchmarkanon/logic_conflict)**
+>
+> [在线浏览数据集](https://huggingface.co/datasets/benchmarkanon/logic_conflict) · [文件与下载](https://huggingface.co/datasets/benchmarkanon/logic_conflict/tree/main)
+
+[数据集](https://huggingface.co/datasets/benchmarkanon/logic_conflict) · [English](README.md) · [方法细节](docs/method.md) · [评测说明](docs/evaluation.md) · [配置说明](docs/configuration.md)
 
 方法使用同一个视觉语言模型完成：目标感知的事实拆解 → 逐事实视觉验证 → 证据不足时补充验证 → 冲突聚合和类型诊断 → 最终回答。每条事实最多验证 **3 轮（包括首次验证）**，获得明确证据后提前停止。方法在推理时运行，不需要额外训练。
 
