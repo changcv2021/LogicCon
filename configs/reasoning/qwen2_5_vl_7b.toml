@@ -1,0 +1,17 @@
+# Local immutable Qwen/Qwen2.5-VL-7B-Instruct snapshot; no automatic download.
+[backend]
+kind = "transformers"
+model = "${LOGICCON_MODEL_PATH}"
+local_files_only = true
+dtype = "bfloat16"
+device_map = "auto"
+max_new_tokens = 1536
+min_pixels = 200704  # 256 * 28 * 28; implementation choice, not specified in PDF
+max_pixels = 802816 # 1024 * 28 * 28
+seed = 20260926
+
+[method]
+mode = "full"
+max_iterations = 3
+max_claims = 16
+format_retries = 1

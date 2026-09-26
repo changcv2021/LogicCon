@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logiccon"
+version = "0.2.0"
+description = "Claim-grounded visual-text conflict reasoning"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "LogicCon contributors"}]
+dependencies = []
+
+[project.optional-dependencies]
+inference = [
+  "torch==2.8.0", "torchvision==0.23.0", "transformers==4.57.3",
+  "accelerate==1.12.0", "Pillow==12.1.0", "sentencepiece==0.2.1",
+]
+
+[project.urls]
+Repository = "https://github.com/changcv2021/LogicCon"
+Issues = "https://github.com/changcv2021/LogicCon/issues"
+
+[project.scripts]
+logiccon-reason = "logiccon.reasoning.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["logiccon", "logiccon.*"]

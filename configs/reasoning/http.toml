@@ -1,0 +1,16 @@
+# A user-configured compatible /v1 endpoint. Never store the key in this file.
+[backend]
+kind = "http"
+model = "${LOGICCON_SERVED_MODEL}"
+base_url = "${LOGICCON_BASE_URL}"
+api_key_env = "LOGICCON_API_KEY"
+max_new_tokens = 1536
+seed = 20260926
+timeout_seconds = 180
+transport_retries = 2
+
+[method]
+mode = "full"
+max_iterations = 3
+max_claims = 16
+format_retries = 1

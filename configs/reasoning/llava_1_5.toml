@@ -1,0 +1,16 @@
+# HF-converted llava-hf/llava-1.5-7b-hf; paper does not specify LLaVA parameter count.
+# Processor uses its native image resolution; Qwen pixel settings are not LLaVA settings.
+[backend]
+kind = "transformers"
+model = "${LOGICCON_MODEL_PATH}"
+local_files_only = true
+dtype = "float16"
+device_map = "auto"
+max_new_tokens = 1536
+seed = 20260926
+
+[method]
+mode = "full"
+max_iterations = 3
+max_claims = 16
+format_retries = 1

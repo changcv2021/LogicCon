@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.env
+.env.*
+!.env.example
+runs/
+logs/
+models/
+data/
+*.safetensors
+*.bin
+requirements.resolved.txt

@@ -1,0 +1,2 @@
+# Core orchestration, HTTP inference, evaluation and tests use Python >=3.11 stdlib.
+-e .

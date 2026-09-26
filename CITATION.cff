@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this implementation, please cite this software and the associated LogicCon paper."
+type: software
+title: "LogicCon: From Structured Facts to Logical Conflicts"
+authors:
+  - name: "LogicCon contributors"
+version: 0.2.0
+date-released: 2026-09-26
+repository-code: "https://github.com/changcv2021/LogicCon"
+license: CC-BY-4.0
+keywords:
+  - vision-language
+  - logical-conflict
+  - multimodal-reasoning
+  - visual-verification

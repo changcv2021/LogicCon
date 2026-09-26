@@ -1,0 +1,13 @@
+# Independent judge endpoint; the paper uses GPT-4o, but its exact snapshot is unspecified.
+[backend]
+kind = "http"
+model = "${LOGICCON_JUDGE_MODEL}"
+base_url = "${LOGICCON_JUDGE_BASE_URL}"
+api_key_env = "LOGICCON_JUDGE_API_KEY"
+max_new_tokens = 512
+seed = 20260926
+timeout_seconds = 180
+transport_retries = 2
+
+[method]
+format_retries = 1
